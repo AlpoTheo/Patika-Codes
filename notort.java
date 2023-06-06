@@ -1,3 +1,5 @@
+package Patika_Codes;
+
 import java.util.Scanner;
 
 public class notort{
@@ -25,5 +27,8 @@ public class notort{
         int toplam = (mat + fizik + kimya + turkce + tarih + muzik);
         double sonuc = toplam / 6.0;
         System.out.print("Ortalamanız: "+sonuc);
+
+        String gecme_durumu = (sonuc>60) ? "Sınıfı Geçti" : "Sınıfta Kaldı" ;
+        System.out.println("\nGeçme durumunuz: "+gecme_durumu);
     }
 }
