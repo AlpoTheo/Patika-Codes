@@ -5,6 +5,7 @@ public class UcakBiletFiyatiHesaplama {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        // Kullanıcıdan istenilen bilgiler alınır ve tanımlanır.
         System.out.print("Mesafeyi (KM) giriniz: ");
         int mesafe = input.nextInt();
 
