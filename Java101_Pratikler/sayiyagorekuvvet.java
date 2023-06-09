@@ -1,4 +1,4 @@
-package Patika_Codes;
+package Java101_Pratikler;
 
 import java.util.Scanner;
 
