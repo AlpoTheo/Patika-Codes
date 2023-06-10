@@ -5,11 +5,16 @@ public class cinzodyagi {
         Scanner input = new Scanner(System.in);
         int dogumyılı;
 
+        // Kullanıcıdan doğum yılı istenir ve tanımlanır.
         System.out.print("Doğum yılınızı giriniz: ");
         dogumyılı = input.nextInt();
 
+        // Burç hesabı yapılabilmesi için verilen hesaplama yapılır ve tanımlanır.
         dogumyılı = dogumyılı % 12;
 
+
+
+        // Verilen hesaplamaya göre burç yorumu yapılır ve ekrana yazılır.
         if (dogumyılı==0){
             System.out.println("Maymun");
         }
