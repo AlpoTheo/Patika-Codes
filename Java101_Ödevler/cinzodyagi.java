@@ -51,6 +51,9 @@ public class cinzodyagi {
         else if (dogumyılı==11){
             System.out.println("Koyun");
         }
+        else{
+            System.out.println("Hatalı giriş yaptınız.");
+        }
     input.close();
     }
 }
