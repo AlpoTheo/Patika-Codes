@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class TersUcgen {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         // Basamak sayısı kullanıcıdan alınıyor.
         System.out.print("Basamak Sayısı: ");
-        int Digits = scanner.nextInt();
+        int Digits = input.nextInt();
 
         int star = Digits * 2 - 1;
         int space = 0;
@@ -27,6 +27,6 @@ public class TersUcgen {
             space++;
         }
         // Scanner kapatılıyor.
-        scanner.close();
+        input.close();
     }
 }
