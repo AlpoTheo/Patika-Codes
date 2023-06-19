@@ -22,7 +22,8 @@ public class FibonacciSeries {
         }
 
         System.out.println();
-        // Scanner kapatılır.
+
+        //Scanner kapatılır.
         input.close();
     }
 }
