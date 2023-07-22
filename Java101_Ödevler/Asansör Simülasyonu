@@ -1,0 +1,31 @@
++-------------------+          +-----------------+          +---------------+
+|     Elevator      | <------- |   ElevatorCall  | <------- |   FloorCall   |
++-------------------+          +-----------------+          +---------------+
+| - id: int         |          | - direction: int |          | - floor: int   |
+| - currentFloor: int       | | - floor: int     |        | - direction: int |
+| - capacity: int   |          |                 |          |                 |
+| - passengers: List<Passenger> |               |        |                 |
++-------------------+          +-----------------+          +---------------+
+| + moveUp(): void            | | + getDirection(): int    | | + getDirection(): int|
+| + moveDown(): void          | | + setDirection(dir: int) | | + setDirection(dir: int) |
+| + addPassenger(p: Passenger): void |            | |                 | | + addFloor(floor: int): void |
+| + removePassenger(p: Passenger): void         | | |               | | + removeFloor(floor: int): void |
+| + isFull(): boolean          | | |                | |               | | + isDirectionSet(dir: int): boolean |
+| + isOpen(): boolean          | | |                | |               | + isFloorSet(floor: int): boolean |
+| + openDoors(): void          | | |                | |               | + getFloors(): List<int> |
+| + closeDoors(): void         | | |                | |               | + getDirections(): List<int> |
++-------------------+          +-----------------+          +---------------+
+                                       ^
+                                       |
+                                       | Inheritance
+                                       |
++---------------------------------------------+
+|                     Passenger               |
++---------------------------------------------+
+| - id: int                                   |
+| - currentFloor: int                         |
+| - destinationFloor: int                     |
++---------------------------------------------+
+| + getDestinationFloor(): int                |
++---------------------------------------------+
+

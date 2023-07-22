@@ -1,0 +1,51 @@
+                      +--------------+
+                      |   Airline    |
+                      +--------------+
+                      | airline_id   |
+                      | name         |
+                      +--------------+
+                            /_\
+                             |
+                             |
+                             |
+                             |
+                     +----------------+
+                     |    Aircraft    |
+                     +----------------+
+                     | aircraft_id    |
+                     | type           |
+                     | status         |
+                     +----------------+
+                            /_\
+                             |
+                             |
+                +------------------------+
+                |         Flight         |
+                +------------------------+
+                | flight_id              |
+                | departure_airport      |
+                | arrival_airport        |
+                | departure_time         |
+                | arrival_time           |
+                | aircraft_id            |
+                | pilot_id               |
+                | co_pilot_id            |
+                +------------------------+
+                      /_\
+                       |
+            +-----------------+
+            |     Airport     |
+            +-----------------+
+            | airport_id      |
+            | name            |
+            +-----------------+
+                 /_\
+                  |
+          +-------------------+
+          |      Pilot        |
+          +-------------------+
+          | pilot_id          |
+          | name              |
+          | experience_level  |
+          | aircraft_type     |
+          +-------------------+
