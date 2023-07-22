@@ -1,0 +1,34 @@
+         +-----------------+
+         |     Kullanıcı   |
+         +-----------------+
+         | - kullaniciAdi: String
+         | - sifre: String
+         | - kredi: int
+         | - abonelik: Abonelik
+         +-----------------+
+         | + krediSatinAl(miktar: int): void
+         | + filmKiralama(kiralananFilm: Film): void
+         | + filmSatınAlma(satinAlinanFilm: Film): void
+         | + filmTalebiEt(filmAdi: String): void
+         +-----------------+
+             ^
+             |
+      +--------------+
+      |   Abonelik   |
+      +--------------+
+      | - abone: boolean
+      | - krediMiktari: int
+      +--------------+
+      | + krediDusur(krediMiktari: int): void
+      +--------------+
+             ^
+             |
+   +-------------------+
+   |       Film        |
+   +-------------------+
+   | - filmAdi: String
+   | - fiyat: int
+   | - stok: int
+   +-------------------+
+   | + filmStokKontrol(): boolean
+   +-------------------+
