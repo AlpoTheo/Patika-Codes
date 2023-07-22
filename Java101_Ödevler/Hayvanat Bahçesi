@@ -1,0 +1,24 @@
+  +------------------+
+  |     Hayvan       |
+  +------------------+
+  | - turAdi: String |
+  | - agirlik: float  |
+  | - yas: int        |
+  +------------------+
+  | + getDosage(): float     |
+  | + getFeedSchedule(): String |
+  +------------------+
+          ^
+          |
+   +--------------+         +---------------+
+   |     Atlar    |-------> |    Kedigiller |
+   +--------------+         +---------------+
+   |                |         |               |
+   +--------------+         +---------------+
+   | + getDosage() |         | + getDosage()  |
+   | + getFeedSchedule() |   | + getFeedSchedule() |
+   +--------------+         +---------------+
+   .
+   .  (Diğer alt sınıflar: Kemirgenler, Kuşlar, vb.)
+   .
+
